@@ -1,4 +1,4 @@
-# 24/7 Aternos Server (through aternos website instead of in-game)
+# 24/7 Aternos Server (through aternos website)
 
 -----------------------------------------------------------------------------------------------------------
 I'm not responsible for any damage caused by this. Use it at your own risk. for educational purposes only.
