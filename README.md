@@ -14,13 +14,15 @@ Note: you should use a device that you dont regularly use and keep the aternos t
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-JS Script 1.: allows you to go from offline to online with no inactivity shut down / this 247 script 
-(go to /server/ and run script) (may need to watch ad and only then its automatic)
+full.js: allows you to go from offline to online with no inactivity shut down / this 247 script 
+To Use: go to /server/ and run script (you may need to watch ad and only then its automatic)
 
-JS Script 2.: this is the bare mininum script, you should run it after turning on the server
+baremin.js: this is the bare mininum script that just adds time if no players are online
+To Use: go to /server/, turn the server on, run the script
 
+you can use the dev tools console (ctrl+shift+i) or dev tools snippets (which i used to make this) and maybe theres other ways
 ------------------------------------------------------------------------------------------------------------------------------
-if you dont want to do it through the website you can use this: 
+if you dont want to do it through the website and instead client side you can use this: 
 
 SpreeHertz's repo: https://github.com/SpreeHertz/aternos-afk-abuser
 
