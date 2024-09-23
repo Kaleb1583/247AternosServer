@@ -22,8 +22,6 @@ JS Script 2.: this is the bare mininum script, you should run it after turning o
 ------------------------------------------------------------------------------------------------------------------------------
 if you dont want to do it through the website you can use this: 
 
-(i found these after making this but the pc i have laying around is slow & old and in turn constantly spitting errors)
-
 SpreeHertz's repo: https://github.com/SpreeHertz/aternos-afk-abuser
 
 ------------------------------------------------------------------------------------------------------------------------------
