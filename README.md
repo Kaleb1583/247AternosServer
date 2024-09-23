@@ -1,10 +1,9 @@
-# 247AternosServer
+# 24/7 Aternos Server (through aternos website instead of in-game)
 
 -----------------------------------------------------------------------------------------------------------
 I'm not responsible for any damage caused by this. Use it at your own risk. for educational purposes only.
 -----------------------------------------------------------------------------------------------------------
 
-#24/7 Aternos Server (through aternos website instead of in-game)
 
 i realized it seems sketch but i promise its not malicious in any way you can look at the js if you please, im just doing this for fun. (sorry for so many words below)
 
