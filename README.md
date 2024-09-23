@@ -5,7 +5,7 @@ I'm not responsible for any damage caused by this. Use it at your own risk. for 
 -----------------------------------------------------------------------------------------------------------
 
 
-i realized it seems sketch but i promise its not malicious in any way you can look at the js if you please, im just doing this for fun. (sorry for so many words below)
+i realized it seems sketch but i promise its not malicious in any way you can look at the js if you please, im just doing this for fun. (sorry if it seems unclear i tried to explain the best i could.)
 
 theres a chance it runs into a error or doesnt press the +1 min button and causes it to shut down fyi
 
