@@ -1,4 +1,5 @@
 console.clear();
+
 var isServerPage = false;
 var url = location.href;
 var status;
@@ -45,34 +46,30 @@ function sleep(ms) {
 }
 
 if (url.includes("/server/")) {
-    console.log("user is on the server page (good thing)");
+    console.log("user is on the right page. (/server/)");
     isServerPage = true;
 } else {
-    console.log("user isn't on the server page (bad thing!)");
+    console.log("user isn't on the right page!");
     if (status && status == "Offline") {
         alert("Go to '/server/' for it to work, it's currently: '" + location.pathname + "'");
     }
 }
 
 function startServer() {
-    if (startButton) {
-        startButton.click();
-    } else {
-        console.log("Start button not found.");
-    }
+    startButton.click();
 }
 
 function stopServer() {
-    if (stopButton) {
-        stopButton.click();
-    } else {
-        console.log("Stop button not found.");
-    }
+    stopButton.click();
+}
+
+function restartServer() {
+    restartButton.click();
 }
 
 if (status === 'Offline') {
     console.log("server is offline, turning it on...");
-    alert("If an ad shows, watch it! you have 120s until i check if its online");
+    alert("if prompted watch the ad, click out of it, then dont touch anything!");
     startServer();
     onStart();
 } else {
@@ -92,6 +89,7 @@ async function onStart() {
         checkLoops();
     } else {
         console.log("server is still offline.");
+        alert("The server is still offline! refresh and try again, sorry :/")
     }
 }
 
@@ -125,6 +123,7 @@ async function countdownhitonemin() {
 }
 
 async function checkCountdown() {
+    //console.log("server has 0 players, running add min function")
     const countdownElement = document.querySelector(".server-end-countdown");
     const playerFraction = document.querySelector(".live-status-box-value.js-players"); // ex: 1/5 Players
     playersOnline = parseInt(playerFraction.innerText.split('/')[0]); // Update playersOnline
@@ -149,8 +148,6 @@ async function checkCountdown() {
 }
 
 function checkLoops() {
-    console.log("starting main functions");
+    console.log("starting check loop funtions");
     checkInterval = setInterval(checkCountdown, 750); 
 }
-
-// Kaleb1583
