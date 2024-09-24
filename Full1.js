@@ -3,7 +3,8 @@ console.clear();
 var isServerPage = false;
 var url = location.href;
 var status;
-var playersOnline;
+var playersOnline = 0;  // Initialize as 0
+var wasPlayerOnline = false;  // Track if players were online
 
 function updateVariables() {
     let statusLabel = document.querySelectorAll(".statuslabel-label")[0];
@@ -123,31 +124,40 @@ async function countdownhitonemin() {
 }
 
 async function checkCountdown() {
-    //console.log("server has 0 players, running add min function")
     const countdownElement = document.querySelector(".server-end-countdown");
-    const playerFraction = document.querySelector(".live-status-box-value.js-players"); // ex: 1/5 Players
-    playersOnline = parseInt(playerFraction.innerText.split('/')[0]); // Update playersOnline
+    const playerFraction = document.querySelector(".live-status-box-value.js-players");
+    playersOnline = parseInt(playerFraction.innerText.split('/')[0]);
 
     if (countdownElement) {
         const countdownValue = countdownElement.innerText;
 
+        // If countdown is 0:59 and no players are online, add one minute
         if (countdownValue === "0:59" && playersOnline === 0) {
             await countdownhitonemin();
         }
     } else {
-        console.log("countdown not found!");
-        console.log("server will probably shut down!")
+        console.log("Countdown not found! Server may shut down.");
     }
 
+    // Handle when players join or leave
     if (playersOnline > 0) {
-        console.log("Player is online, stopping time extension check.");
-        clearInterval(checkInterval);
+        if (!wasPlayerOnline) {
+            console.log("Player joined. Stopping time extension checks.");
+            clearInterval(checkInterval);  // Stop checking when a player is online
+        }
+        wasPlayerOnline = true;
     } else {
-        //console.log("No players online, continuing to add time...");
+        if (wasPlayerOnline) {
+            console.log("Player left. Resuming time extension checks.");
+            checkLoops();  // Restart time extension check when all players leave
+        }
+        wasPlayerOnline = false;
     }
 }
 
 function checkLoops() {
-    console.log("starting check loop funtions");
-    checkInterval = setInterval(checkCountdown, 750); 
+    console.log("Starting time extension check loops");
+    if (!checkInterval) {
+        checkInterval = setInterval(checkCountdown, 750); 
+    }
 }
