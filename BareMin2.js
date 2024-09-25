@@ -14,7 +14,6 @@ function main() {
     var statusElement = document.querySelectorAll(".statuslabel-label")[0];
     var playersElement = document.querySelector(".live-status-box-value.js-players");
 
-    // Ensure elements exist before accessing their values
     if (statusElement && playersElement) {
         var status = statusElement.innerText;
         var playersOnline = parseInt(playersElement.innerText.split('/')[0]);
