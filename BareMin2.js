@@ -8,8 +8,6 @@ function timeToSeconds(timeStr) {
     return (minutes * 60) + seconds;
 }
 
-//var lastPlayersOnline = null;
-
 function main() {
     console.log("---");
     
@@ -33,20 +31,18 @@ function main() {
                 console.log("checking if countdown can be increased")
 
                 if (countdownElement) {
-                    var countdownValueWhenRunned = countdownElement.innerText; // Get the innerText
+                    var countdownValueWhenRunned = countdownElement.innerText;
                     var countdownValue = timeToSeconds(countdownValueWhenRunned);
 
                     console.log("Countdown Value: " + countdownValue + " Seconds"); 
 
-                    if (countdownValue < 60) { // Check if less than a minute
+                    if (countdownValue < 60) {
                         console.log("Less than a minute left, need to add time to keep the server on.");
                         
                         var addOneMinuteButton = document.querySelector(".extend").children[0];
                         if(addOneMinuteButton !== null) {
                             addOneMinuteButton.click();
-                            console.log("Before: " + countdownValue + " -> " + countdownElement.innerText)
                             console.log('%cAdded a minute.', 'color: green');
-
                         }
                         
                     } else {
@@ -66,12 +62,10 @@ function main() {
             console.log("Not online nor offline, your server may be: waiting, loading, starting, preparing, or saving.");
         }
     } else {
-        console.log("One or more required elements are not found in the DOM."); // Log if elements are not found
+        console.log("One or more required elements are not found in the DOM."); 
     }
 
     console.log("---");
 }
-
-//main();
 
 var interval = setInterval(main, 10000);
