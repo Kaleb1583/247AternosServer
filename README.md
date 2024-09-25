@@ -22,6 +22,8 @@ DevTools Console Functions: you can use startServer(), stopServer(), restartServ
 baremin.js: this is the bare mininum script that just adds time if no players are online
 To Use: go to /server/, turn the server on, run the script
 
+aternosVars.js: if you want to add on or create something in js theres everything i could find when it comes to js functions and vars and also using classes to get values too
+
 you can use the dev tools console (ctrl+shift+i) or dev tools snippets (which i used to make this) and maybe theres other ways
 ------------------------------------------------------------------------------------------------------------------------------
 if you dont want to do it through the website and instead client side you can use this: 
