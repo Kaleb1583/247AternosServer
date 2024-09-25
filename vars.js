@@ -58,3 +58,12 @@ hideAlert(); /* (or/equals ->) */ lastAlert.hide(); // (when an alert is made it
 LANGUAGE
 LANGUAGE_VARIABLES
 LANG // for english it would be var LANG = "en"
+
+
+// ads on aternos
+remove top center ad: document.querySelector(".header-center").children[0].remove();
+remove right sidebar ad: document.querySelector(".sidebar").remove();
+remove ad above server ip: document.querySelector(".ad-replacement").remove();
+
+// all together in one line, note they can detect adblockers so when its runned it will pop up the red screen telling you to disable your ad blocker
+document.querySelector(".header-center").children[0].remove(); document.querySelector(".sidebar").remove(); document.querySelector(".ad-replacement").remove(); 
