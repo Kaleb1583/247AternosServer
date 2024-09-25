@@ -29,8 +29,15 @@ var confirmButton = document.getElementById("confirm");
 function confirm() { confirmButton.click(); }
 
 
-var COUNTDOWN = false;
+var COUNTDOWN = false; // idk what this does exactly
 var COUNTDOWN_END = COUNTDOWN ? COUNTDOWN + Math.round(Date.now() / 1000) : false;
+// ^ equals unix time, ive tried setting it to a higher ammount of time so the server wouldnt turn on 
+// but its only cosmetic you can make it say 30 mins until the server turns off but if you go into another tab youll
+// see the actual ammount of time left which would be 0:00 - 10:00 mins (<- normally it starts with around 5-10 mins)
+
+
+// these are unknow like COUNTDOWN, dont know what they do but you can make a educated guess by the name
+// and you can try to figure out what is is through console
 var CONSOLE_PERMISSION = true;
 const ADMIN = false;
 const HASJMX = true;
@@ -43,13 +50,11 @@ const EXTEND_ONLY_BELOW_DEFAULT = true;
 
 // aternos has custom alert using something like swal alert
 alert({ title: "Alert Title", text: "This is the alert body text." })
-
 // you can use html custom text like strong, bold, italic & even elements like <h1>.
-
 
 hideAlert(); /* (or/equals ->) */ lastAlert.hide(); // (when an alert is made its stored as lastAlert)
 
 
 LANGUAGE
 LANGUAGE_VARIABLES
-LANG // (= "en")
+LANG // for english it would be var LANG = "en"
