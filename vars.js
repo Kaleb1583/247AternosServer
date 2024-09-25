@@ -24,8 +24,8 @@ function cancel() { cancelButton.click(); }
 var restartButton = document.getElementById("restart");
 function restartServer() { restartButton.click(); }
 
-var confirm = document.getElementById("confirm");
-function confirm() { confirm.click(); }
+var confirmButton = document.getElementById("confirm");
+function confirm() { confirmButton.click(); }
 
 
 var COUNTDOWN = false;
