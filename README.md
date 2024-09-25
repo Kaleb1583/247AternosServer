@@ -29,5 +29,6 @@ you can use the dev tools console (ctrl+shift+i) or dev tools snippets (which i 
 if you dont want to do it through the website and instead client side you can use this: 
 
 SpreeHertz's repo: https://github.com/SpreeHertz/aternos-afk-abuser
+(credit for this and i got the im not responsible.. message above from this repo)
 
 ------------------------------------------------------------------------------------------------------------------------------
