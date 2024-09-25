@@ -13,6 +13,7 @@ Note: theres a chance it runs into a error or doesnt press the +1 min button and
 Note: you should use a device that you dont regularly use and keep the aternos tab open (or on a second monitor) or it might stop the script like it did for me)
 
 ------------------------------------------------------------------------------------------------------------------------------
+full.js still needs improvement, baremin.js should be as good as it could get
 
 full.js: allows you to go from offline to online with no inactivity shut down / this 247 script 
 To Use: go to /server/ and run script (you may need to watch ad and only then its automatic)
