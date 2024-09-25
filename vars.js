@@ -1,3 +1,4 @@
+// if you want to do code something your self you can use these to help
 
 console.clear();
 
@@ -45,3 +46,10 @@ alert({ title: "Alert Title", text: "This is the alert body text." })
 
 // you can use html custom text like strong, bold, italic & even elements like <h1>.
 
+
+hideAlert(); /* (or/equals ->) */ lastAlert.hide(); // (when an alert is made its stored as lastAlert)
+
+
+LANGUAGE
+LANGUAGE_VARIABLES
+LANG // (= "en")
