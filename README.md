@@ -1,27 +1,40 @@
 # 24/7 Aternos Server (through aternos website)
 
------------------------------------------------------------------------------------------------------------
-I'm not responsible for any damage caused by this. Use it at your own risk. for educational purposes only.
------------------------------------------------------------------------------------------------------------
+---
 
+> **Disclaimer:**  
+> I'm not responsible for any damage caused by this. Use it at your own risk. This is for educational purposes only.
 
-i realized it seems sketch but i promise its not malicious in any way you can look at the js if you please, im just doing this for fun. 
+---
 
-sorry if it seems unclear i tried to explain the best i could.
+I realize this might seem sketchy, but I promise it's not malicious in any way. You can review the JavaScript if you please. I'm just doing this for fun!
 
-Note: theres a chance it runs into a error or doesnt press the +1 min button and causes it to shut down, its not flawless.
+Sorry if some parts seem unclear, I tried to explain everything the best I could.
 
-Note: you should use a device that you dont regularly use and keep the aternos tab open (or on a second monitor) or it might stop the script like it did for me)
+### Notes:
+- **Possible Errors**: There's a chance it could run into an error or fail to press the "+1 min" button, which could cause the server to shut down. It's not flawless.
+- **Device Use**: It's best to use this on a device you don't regularly use. Keep the Aternos tab open (on a second monitor, if possible) to avoid interruptions, as the script might stop like it did for me.
 
+---
 
-AntiServerShutdown.js: this is the bare mininum script that just adds time if no players are online
-To Use: go to /server/, turn the server on, run the script
+### Files
+1. **AntiServerShutdown.js**  
+   This is the bare minimum script that just adds time if no players are online.  
+   **To Use**: Go to `/server/`, turn the server on, and run the script.
 
-vars.js: if you want to create a script that manipulates aternos' functions and buttons like this or add on to this you can use this to help ( functions, variables, buttons (through class names) )
+2. **vars.js**  
+   If you want to create a script that manipulates Aternos' functions and buttons or build on top of this, you can use this as a helper.  
+   It includes references to functions, variables, and buttons (through class names).
 
-you can use the dev tools console or dev tools snippets (CTRL + SHIFT + I (Chrome/Opera))
+---
 
+### How to Use:
+- You can use the Dev Tools Console or Dev Tools Snippets.  
+  Shortcut: `CTRL + SHIFT + I` (Chrome/Opera).
 
--------------------------------------------
-if you dont want to do it through the website and instead client side you can use this: SpreeHertz's repo: https://github.com/SpreeHertz/aternos-afk-abuser
--------------------------------------------
+---
+
+### Alternatives:
+If you don't want to do this through the website and prefer a client-side approach, you can check out SpreeHertz's repo:  
+[SpreeHertz's aternos-afk-abuser](https://github.com/SpreeHertz/aternos-afk-abuser)
+
