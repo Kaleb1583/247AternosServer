@@ -17,9 +17,9 @@ Note: you should use a device that you dont regularly use and keep the aternos t
 AntiServerShutdown.js: this is the bare mininum script that just adds time if no players are online
 To Use: go to /server/, turn the server on, run the script
 
-vars.js: if you want to add on or create something in js theres everything i could find when it comes to js functions and vars and also using classes to get values too
+vars.js: if you want to create a script that manipulates aternos' functions and buttons like this or add on to this you can use this to help ( functions, variables, buttons (through class names) )
 
-you can use the dev tools console (ctrl+shift+i) or dev tools snippets (which i used to make this) and maybe theres other ways
+you can use the dev tools console or dev tools snippets (CTRL + SHIFT + I (Chrome/Opera))
 
 
 -------------------------------------------
