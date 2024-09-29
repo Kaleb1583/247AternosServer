@@ -7,7 +7,7 @@
 
 ---
 
-I realize this might seem sketchy, but I promise it's not malicious in any way. You can review the JavaScript if you please. I'm just doing this for fun!
+I realize this might seem sketchy, but I promise it's not malicious in any way. You can review the JavaScript if you please. I'm just doing this for fun.
 
 Sorry if some parts seem unclear, I tried to explain everything the best I could.
 
