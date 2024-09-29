@@ -19,7 +19,7 @@ Sorry if some parts seem unclear, I tried to explain everything the best I could
 
 ### Files
 1. **AntiServerShutdown.js**  
-   This is the bare minimum script that just adds time if no players are online.  
+   a script that just adds time if no players are online to keep it up.  
    **To Use**: Go to `/server/`, turn the server on, and run the script.
 
 2. **vars.js**  
